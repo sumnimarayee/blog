@@ -13,7 +13,7 @@ app.get('/', function(req, res) {
 });
 
 // about page
-app.get('/blog', function(req, res) {
+app.get('/individualBlog', function(req, res) {
   res.render('individualBlog');
 });
 

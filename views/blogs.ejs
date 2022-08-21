@@ -111,6 +111,34 @@
         .card_writer hr {
             margin: 2px 0px 2px 0px;
         }
+
+        .card {
+            height: 420px;
+            width: 280px;
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 45px;
+            box-shadow: 2px 2px 2px 2px rgb(138, 195, 228);
+            border: 1px solid lightgrey;
+            position: relative;
+            border-radius: 5%;
+            overflow: hidden;
+            transition: 250ms all;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+        }
+
+        .second_heading a {
+            color: white;
+        }
     </style>
 </head>
 
@@ -126,7 +154,7 @@
                 <p>PL multimedia</p>
             </div>
             <div id="Group1">
-                <p>Home</p>
+                <p><a href="/">Home</a></p>
                 <p>Service</p>
                 <p>Portfolio</p>
                 <p>About Us</p>
@@ -141,28 +169,31 @@
         </div>
         <div class="three_cards_holder">
             <div class="card">
-                <div class="card_photo">
-                    <img src="1.jpg">
-                </div>
-                <div class="card_content">
-                    <div>
-                        <p><b>Advantages of proper management of a remote team Proper remote team management</b></p>
+                <a href="/individualBlog">
+                    <div class="card_photo">
+                        <img src="1.jpg">
                     </div>
-                    <div>
-                        <p>Proper remote team management provides more flexibility, autonomy and reduces distractions,
-                            reduces overhead costs and saves money ...</p>
+                    <div class="card_content">
+                        <div>
+                            <p><b>Advantages of proper management of a remote team Proper remote team management</b></p>
+                        </div>
+                        <div>
+                            <p>Proper remote team management provides more flexibility, autonomy and reduces
+                                distractions,
+                                reduces overhead costs and saves money ...</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card_author">
-                    <div class="card_profile">
-                        <img src="pro_7.jpg">
+                    <div class="card_author">
+                        <div class="card_profile">
+                            <img src="pro_7.jpg">
+                        </div>
+                        <div class="card_writer">
+                            <p>Jhon kay</p>
+                            <hr style="width:100%;text-align:left;margin-left:0">
+                            <p> 13 January 2020</p>
+                        </div>
                     </div>
-                    <div class="card_writer">
-                        <p>Jhon kay</p>
-                        <hr style="width:100%;text-align:left;margin-left:0">
-                        <p> 13 January 2020</p>
-                    </div>
-                </div>
+                </a>
             </div>
             <div class="card">
                 <div class="card_photo">
@@ -173,7 +204,8 @@
                         <p><b>Importance of cyber security</b></p>
                     </div>
                     <div>
-                        <p>Cybersecurity is the practice of protecting networks, devices and data from damage, loss or
+                        <p>Cybersecurity is the practice of protecting networks, devices and data from damage, loss
+                            or
                             unauthorized access.</p>
                     </div>
                 </div>
@@ -197,7 +229,8 @@
                         <p><b>Features of cloud computing</b></p>
                     </div>
                     <div>
-                        <p>Cloud computing is the on-demand availability of computer system resources, especially data
+                        <p>Cloud computing is the on-demand availability of computer system resources, especially
+                            data
                             storage and computing power, without direct active management by the user.</p>
                     </div>
                 </div>
@@ -223,7 +256,8 @@
                         <p><b>Mercedes nividia could create a truly smart car</b></p>
                     </div>
                     <div>
-                        <p>Last week must have been car week because i was getting news releases that had tesla last on
+                        <p>Last week must have been car week because i was getting news releases that had tesla last
+                            on
                             their latest JD...</p>
                     </div>
                 </div>
