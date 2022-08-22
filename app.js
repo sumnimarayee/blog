@@ -13,9 +13,9 @@ app.get('/', function(req, res) {
 });
 
 // about page
-app.get('/individualBlog/:no', function(req, res) {
-  // console.log(req.params.no);
-  res.render('individualBlog', blogTable[4]);
+app.get('/individualBlog/:blogId', function(req, res) {
+  // console.log(req.params.);
+  res.render('individualBlog', blogTable[req.params.blogId - 1]);
 });
 
 
@@ -27,6 +27,9 @@ var blogTable = [
   {
     heading:'Advantages of proper management of a remote team Proper remote team management',
     image:"1.jpg",
+    writerImage:"pro_7.jpg",
+    writerName:'Jhon kay',
+    writtenDate:'13 January 2020',
     body:`&lt; Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis eos voluptate quas maiores dolor
     porro sequi incidunt velit asperiores temporibus? Sapiente dolore obcaecati nesciunt? Fuga in
     repudiandae nobis quasi quos tenetur minus obcaecati magnam. Quia autem sapiente exercitationem voluptas
@@ -76,6 +79,9 @@ var blogTable = [
   {
     heading:'Importance of cyber security',
     image:"2.webp",
+    writerImage:"pro_2.jpg",
+    writerName:'Brooklyn Simmons',
+    writtenDate:'21 Feburary 2021',
     body:`&lt; Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis eos voluptate quas maiores dolor
     porro sequi incidunt velit asperiores temporibus? Sapiente dolore obcaecati nesciunt? Fuga in
     repudiandae nobis quasi quos tenetur minus obcaecati magnam. Quia autem sapiente exercitationem voluptas
@@ -125,6 +131,9 @@ var blogTable = [
   {
     heading:'Features of cloud computing',
     image:"7.jpg",
+    writerImage:"pro_3.jpg",
+    writerName:'Jerome Bell',
+    writtenDate:'25 January 2020',
     body:`&lt; Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis eos voluptate quas maiores dolor
     porro sequi incidunt velit asperiores temporibus? Sapiente dolore obcaecati nesciunt? Fuga in
     repudiandae nobis quasi quos tenetur minus obcaecati magnam. Quia autem sapiente exercitationem voluptas
@@ -174,6 +183,9 @@ var blogTable = [
   {
     heading:'Mercedes nividia could create a truly smart car',
     image:"4.webp",
+    writerImage:"pro_4.jpg",
+    writerName:'Cameron Williamson',
+    writtenDate:'05 March 2020',
     body:`&lt; Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis eos voluptate quas maiores dolor
     porro sequi incidunt velit asperiores temporibus? Sapiente dolore obcaecati nesciunt? Fuga in
     repudiandae nobis quasi quos tenetur minus obcaecati magnam. Quia autem sapiente exercitationem voluptas
@@ -223,6 +235,9 @@ var blogTable = [
   {
     heading:'REthinking remote education in this pandemic',
     image:"5.jpg",
+    writerImage:"pro_5.jpg",
+    writerName:'Kylie Kay',
+    writtenDate:'27 January 2020',
     body:`&lt; Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis eos voluptate quas maiores dolor
     porro sequi incidunt velit asperiores temporibus? Sapiente dolore obcaecati nesciunt? Fuga in
     repudiandae nobis quasi quos tenetur minus obcaecati magnam. Quia autem sapiente exercitationem voluptas
@@ -272,6 +287,9 @@ var blogTable = [
   {
     heading:'Best tourist desinations to visit once in your lifetime',
     image:"6.jpg",
+    writerImage:"pro_6.jpg",
+    writerName:'Theresa Webb',
+    writtenDate:'12 December 2021',
     body:`&lt; Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis eos voluptate quas maiores dolor
     porro sequi incidunt velit asperiores temporibus? Sapiente dolore obcaecati nesciunt? Fuga in
     repudiandae nobis quasi quos tenetur minus obcaecati magnam. Quia autem sapiente exercitationem voluptas
